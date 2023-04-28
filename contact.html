@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/logo.svg" alt="">
+      </a>
+      <div class="header-nav header__nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Услуги
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Детский барбершоп
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Локации
+            </a>
+            <div class="header-nav__drop">
+              <ul class="header-nav__drop-list">
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Подол
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Печерск
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Позняки
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Оболонь
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Теремки
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Осокорки
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Русановка
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Виноградар
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">
+                    Троещина
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Lookbook
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              О нас
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Школа барберов
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">
+              Сотрудничество
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-language header__language">
+        <div class="header-language__btn">
+          <span class="header-language__current">
+            Рус
+          </span>
+        </div>
+        <div class="header-language__drop">
+          <ul class="header-language__drop-list">
+            <li>
+              <a href="#" class="header-language__link">
+                Укр
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header-language__link">
+                Eng
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__contacts">
+        <a href="tel:+380673339871" class="header-phone">
+          +38 (067) 333 98 71
+        </a>
+      </div>
+      <div class="header__make-appointment">
+        <a href="#" class="btn header-make-appointment">
+          Записаться
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="main">
+      <div class="section section-hero3">
+        <div class="container section-hero3__container">
+          <div class="default-layout default-layout_main section-hero3__layout">
+            <div class="default-layout__top">
+              <h1 class="default-layout__img-title">
+                <span>
+                  Приветствуем
+                </span>
+                <span>
+                  в мире
+                </span>
+                <span>
+                  LUMBERjack
+                </span>
+              </h1>
+              <img src="images/contact.png" alt="" class="default-layout__img">
+              <div class="default-layout__content">
+                <div class="default-layout__title default-layout__title_mb_50">
+                  Контакты
+                </div>
+                <div class="text default-layout__text default-layout__text_w_800">
+                  <p>
+                    ПН - ВС / 10:00 - 21:00
+                    <br>
+                    Телефон: <a href="tel:+380673339871">+38-067-333-987-1</a>
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="btn-make-appointment default-layout__make-appointment4">
+                <svg width="204" height="204" class="btn-make-appointment__bg">
+                  <use href="images/svg-icons.svg#btn-make-an-appointment"></use>
+                </svg>
+                <span class="btn-make-appointment__bg btn-make-appointment__bg_hover">
+                  <svg width="204" height="204">
+                    <use href="images/svg-icons.svg#btn-make-an-appointment"></use>
+                  </svg>
+                </span>
+                <svg width="53" height="53" class="btn-make-appointment__arrow">
+                  <use href="images/svg-icons.svg#btn-diagonal-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-map">
+  <div class="section-map__map-wrapper" id="location-map"></div>
+  <div class="container">
+    <div class="section-map__info">
+      <div class="section-map__head">
+        <div class="section-map__schedule">ПН - ВС / 10:00 - 21:00</div>
+        <a href="tel:+380673339871" class="section-map__phone">+38 (067) 333 98 71</a>
+      </div>
+      <ul class="section-map__list"></ul>
+    </div>
+  </div>
+</div>
+      <div class="section section_pt_120 section_pb_140 section-route">
+  <div class="container">
+    <div class="section-title section-route__title">
+      Маршрут
+    </div>
+    <div class="text section-route__text">
+      Мы постарались собрать для Вас список улиц, чтоб Вам было удобнее проложить маршрут до ближайшего Барбершопа
+      сети Lumberjack
+    </div>
+    <div class="swiper swipepr-btns route-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul class="route-list">
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Николая Бажана
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ивана Бойка
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Заречная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Петра Григоренко
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Сортировочная Вулиця Сортувальна
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Здолбуновская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Внешняя
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ижевская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Андрея Кизила
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Александра Попова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Новозабарская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Осиповского
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар переулок Дубровицкий
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Луговая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Дубровицкая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Агрегатная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Радомышльская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Брюсова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Автозаводская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки улица Успешная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки ул. Сергея Колоса (Ленина)
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Срибнокильская улица
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Княжий Затон
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="route-list">
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Николая Бажана
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ивана Бойка
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Заречная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Петра Григоренко
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Сортировочная Вулиця Сортувальна
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Здолбуновская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Внешняя
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ижевская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Андрея Кизила
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Александра Попова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Новозабарская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Осиповского
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар переулок Дубровицкий
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Луговая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Дубровицкая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Агрегатная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Радомышльская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Брюсова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Автозаводская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки улица Успешная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки ул. Сергея Колоса (Ленина)
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Срибнокильская улица
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Княжий Затон
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="route-list">
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Николая Бажана
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ивана Бойка
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Заречная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Петра Григоренко
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Сортировочная Вулиця Сортувальна
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Здолбуновская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Внешняя
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ижевская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Андрея Кизила
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Александра Попова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Новозабарская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Осиповского
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар переулок Дубровицкий
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Луговая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Дубровицкая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Агрегатная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Радомышльская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Брюсова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Автозаводская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки улица Успешная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки ул. Сергея Колоса (Ленина)
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Срибнокильская улица
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Княжий Затон
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="route-list">
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Николая Бажана
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ивана Бойка
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Заречная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Проспект Петра Григоренко
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Сортировочная Вулиця Сортувальна
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Здолбуновская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Внешняя
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Ижевская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Андрея Кизила
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Александра Попова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Новозабарская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Шахтерская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Осиповского
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар переулок Дубровицкий
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Луговая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Дубровицкая
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Агрегатная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Радомышльская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Брюсова
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Виноградар улица Автозаводская
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки улица Успешная
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Теремки ул. Сергея Колоса (Ленина)
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Срибнокильская улица
+              </a>
+            </li>
+            <li class="route-list__item">
+              <a href="#" class="route-list__link">
+                Улица Княжий Затон
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-button-prev swiper-btn-custom swiper-btn-custom_prev">
+        <svg width="33" height="16">
+          <use href="images/svg-icons.svg#arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next swiper-btn-custom swiper-btn-custom_next">
+        <svg width="33" height="16">
+          <use href="images/svg-icons.svg#arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="scction section-inst">
+  <div class="section-inst__grid">
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram1.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram2.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram3.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram4.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram4.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram3.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram2.png" alt="">
+    </div>
+    <div class="section-inst__item">
+      <img src="images/instagram/instagram1.png" alt="">
+    </div>
+  </div>
+  <div class="section-inst__title">
+    <span class="section-inst__title-inner">
+      <a href="#">
+        Instagram
+      </a>
+    </span>
+  </div>
+</div>
+      <div class="section section_blue section_pt_130 section_pb_140 section-media-s">
+  <div class="container">
+    <div class="section-media-s__inner">
+      <div class="section-media-s__left">
+        <div class="section-title section-media-s__title">
+          Медиа
+        </div>
+        <div class="text section-media-s__text">
+          Наше заведение стало популярным местом для многих известных личностей. Евгений Коноплянка, Сергей
+          Цвиловский, Сергей Величанский, Александр Ярмак… Это далеко не полный список известных лиц, которых вы
+          можете встретить в Lumberjack.
+        </div>
+        <ul class="section-media-s__list">
+          <li>
+            <a href="#" target="_blank" class="btn-arrow btn-arrow_t2 btn-arrow_dark">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="btn-arrow btn-arrow_t2 btn-arrow_dark">
+              Youtube
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="btn-arrow btn-arrow_t2 btn-arrow_dark">
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-media-s__right">
+        <img src="images/media-s.png" alt="" class="section-media-s__img">
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <div class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__cell">
+          <div class="footer-nav__title">
+            О нас
+          </div>
+          <ul class="footer-nav__list">
+            <li>
+              <a href="#">
+                Барберхауз
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастера
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и цены
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Новости
+              </a>
+            <li>
+              <a href="#">
+                Вакансии
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Карта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Карта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Локации
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__cell">
+          <div class="footer-nav__title">
+            Корп. Клиентам
+          </div>
+          <ul class="footer-nav__list">
+            <li>
+              <a href="#">
+                Офисы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Выездные услуги
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Свадебным агенствам
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Event агенствам
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__cell">
+          <div class="footer-nav__title">
+            Коллаборации
+          </div>
+          <ul class="footer-nav__list">
+            <li>
+              <a href="#">
+                Фотографы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Видеосъёмка
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Медиа
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мероприятия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Поставщики
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Брендинг
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Торговые площади
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Аренда помещений
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Лидеры мнений
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__cell">
+          <div class="footer-nav__title">
+            Информация
+          </div>
+          <ul class="footer-nav__list">
+            <li>
+              <a href="#">
+                Онлайн сервис
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Программа лояльности
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Акции
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Сертификаты
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Пользовательское соглашение
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Защита персональных данных
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__cell">
+          <ul class="footer-socl">
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                App store
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                Google play
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                Youtube
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn-arrow">
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © 2021 Lumberjack Barberhouse
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <a href="#" class="float-btn">
+  <svg class="float-btn__icon" width="31" height="33" viewBox="0 0 31 33" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M18.4685 20.2174C18.8855 19.6077 19.3958 18.9027 20.0192 18.1031C22.5366 14.8739 30.9999 0 30.9999 0L16.1738 17.5494L17.7776 19.4473C17.9997 19.7076 18.2314 19.964 18.4685 20.2174Z"
+      fill="currentColor" />
+    <path
+      d="M14.2633 22.4475L14.1883 22.2856C14.1834 22.2761 13.8421 21.5636 12.8286 20.2174C11.8191 21.1103 10.7286 21.9128 9.57031 22.6154C8.84202 23.0476 8.22748 23.6384 7.77539 24.341L7.72563 24.3797C7.18317 24.7877 6.42553 24.9542 5.67421 24.876C5.01839 24.8068 4.35506 24.854 3.7167 25.0154C1.77391 25.5077 0.534782 26.981 0.758357 28.5373C0.820957 28.971 0.985706 29.3849 1.23984 29.7468C1.56574 30.2227 1.67438 30.7666 1.48514 31.28L1.47885 31.2983L0.126177 31.966C-0.127535 32.0904 0.0329542 32.3909 0.328018 32.3426L2.78525 31.9558C2.84202 31.5478 3.36487 31.2759 3.8793 31.3894C4.94385 31.6237 6.05621 31.5452 7.07453 31.1637C8.70264 30.5559 9.62078 29.2301 9.43365 27.8513C9.43468 27.844 9.43468 27.8367 9.43365 27.8295C9.16241 25.9775 10.3651 24.1703 12.5336 23.3232C13.2835 23.0345 14.0487 22.7848 14.8261 22.5753C14.7118 22.5494 14.5976 22.5229 14.4806 22.4978L14.2633 22.4475ZM5.30766 30.4328C3.99003 30.511 2.73969 29.8814 2.31217 28.9228C1.68489 27.5174 2.94295 26.0523 4.88014 25.9374C6.19776 25.8598 7.4481 26.4894 7.87563 27.4474C8.50571 28.8527 7.24414 30.3179 5.31046 30.4328H5.30766Z"
+      fill="currentColor" />
+    <path
+      d="M30.8747 31.9445L29.5239 31.2458L29.5176 31.2273C29.3301 30.6867 29.4364 30.1168 29.7633 29.6211C30.0167 29.2416 30.1816 28.8082 30.2455 28.354C30.4687 26.7237 29.2314 25.1802 27.2913 24.6653C26.6542 24.496 25.992 24.4463 25.3373 24.5186C24.5878 24.6005 23.8298 24.4238 23.2888 23.9986L23.2384 23.9594C22.7872 23.223 22.1735 22.6039 21.446 22.151V22.151C19.8406 21.1363 18.3703 19.9154 17.0712 18.5185L0 0C0 0 8.69375 14.005 11.2798 17.0456C13.8658 20.0862 14.5769 21.6895 14.5769 21.6895C15.9102 21.9817 17.2179 22.384 18.487 22.8925C20.6566 23.7799 21.8534 25.6703 21.5825 27.614C21.5825 27.6218 21.5825 27.6297 21.5825 27.6375C21.3957 29.0827 22.3132 30.4701 23.9383 31.1076C24.9553 31.5078 26.0664 31.5904 27.1297 31.3448C27.6434 31.2251 28.1662 31.5107 28.2222 31.9374L30.6759 32.3433C30.9671 32.3889 31.1266 32.0748 30.8747 31.9445ZM15.5 20.2365C15.0066 20.2365 14.6069 19.916 14.6069 19.52C14.6069 19.124 15.0066 18.8027 15.5 18.8027C15.9934 18.8027 16.393 19.124 16.393 19.52C16.393 19.916 15.9934 20.2365 15.5 20.2365ZM28.6918 28.7557C28.2663 29.7593 27.0163 30.4196 25.6998 30.3377C23.7675 30.2166 22.5106 28.6831 23.1355 27.2102C23.5618 26.2066 24.811 25.5463 26.1275 25.629C28.0598 25.7493 29.3175 27.2828 28.6918 28.7557Z"
+      fill="currentColor" />
+  </svg>
+
+  <span class="float-btn__text">
+    запись
+    онлайн
+  </span>
+</a>
+  <div class="modal modal-vacancies" id="modal-vacancies">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-vacancies__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Стать барбером в&nbsp;Lumberjack Barberhouse
+      </div>
+      <div class="modal__text">
+        Оставьте заявку и мы перезвоним вам в ближайшее время
+      </div>
+      <div class="input-row modal__row">
+        <input type="text" class="input-row__input" placeholder="Имя">
+        <div class="input-row__msg input-row__msg_mb">
+          Введите Имя
+        </div>
+      </div>
+      <div class="input-row modal__row _msg _error">
+        <input type="text" class="input-row__input" placeholder="Фамилия">
+        <div class="input-row__msg input-row__msg_mb">
+          Введите Фамилию
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <input type="text" class="input-row__input" placeholder="Телефон">
+        <div class="input-row__msg input-row__msg_mb">
+          Введите Телефон
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button class="btn btn_w_220 modal__btn js-modal-hide">
+          Стать барбером
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-refill" id="modal-refill">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-refill__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Пополнение счета <br>
+        (от 400 грн.)
+      </div>
+      <div class="modal__inputs">
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="от 400 грн">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите E-mail
+          </div>
+        </div>
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="E-mail">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите E-mail
+          </div>
+        </div>
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="Ваше имя">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите Ваше имя
+          </div>
+        </div>
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="Телефон">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите Телефон
+          </div>
+        </div>
+      </div>
+      <div class="modal__payments">
+        <div class="modal__title2">
+          Инфрмация о платеже
+        </div>
+        <ul class="inputs-list">
+          <li>
+            <label class="radio-btn">
+              <input type="radio" class="radio-btn__input" name="payment-type" checked>
+              <span class="radio-btn__checkmark"></span>
+              <span class="radio-btn__text">LiqPay</span>
+            </label>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="radio" class="radio-btn__input" name="payment-type">
+              <span class="radio-btn__checkmark"></span>
+              <span class="radio-btn__text">LiqPay</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__note">
+        Есть подарочная карта? <a href="#" class="modal__code">Активируйте ваш код</a>
+      </div>
+      <ul class="modal__terms">
+        <li>
+          <label class="checkbox checkbox_fz_16">
+            <input type="checkbox" class="checkbox__input" name="check-term">
+            <span class="checkbox__checkmark"></span>
+            <span class="checkbox__text">
+              Я принимаю: Правила и условия использования, Политика возврата, Информация о доставке и оплате
+            </span>
+          </label>
+        </li>
+        <li>
+          <label class="checkbox checkbox_fz_16">
+            <input type="checkbox" class="checkbox__input" name="check-term">
+            <span class="checkbox__checkmark"></span>
+            <span class="checkbox__text">
+              Извещайте меня о новостях и эксклюзивных предложениях
+            </span>
+          </label>
+        </li>
+      </ul>
+      <div class="modal__btns">
+        <button class="btn btn_w_220 modal__btn js-modal-hide">
+          Оплатить
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-gift-certificate" id="modal-gift-certificate">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-gift-certificate__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Подарочный сертификат
+      </div>
+      <div class="modal__title2">
+        Стоимость сертификата
+      </div>
+      <ul class="inputs-list modal__certificate-type">
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type" checked>
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">500грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">700грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">1000грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">1500грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">2000грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">3000грн.</span>
+          </label>
+        </li>
+        <li>
+          <label class="radio-btn">
+            <input type="radio" class="radio-btn__input" name="certificate-type">
+            <span class="radio-btn__checkmark"></span>
+            <span class="radio-btn__text">5000грн.</span>
+          </label>
+        </li>
+      </ul>
+      <div class="modal__inputs">
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="E-mail">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите E-mail
+          </div>
+        </div>
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="Ваше имя">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите Ваше имя
+          </div>
+        </div>
+        <div class="input-row modal__row">
+          <input type="text" class="input-row__input" placeholder="Телефон">
+          <div class="input-row__msg input-row__msg_mb">
+            Введите Телефон
+          </div>
+        </div>
+      </div>
+      <div class="modal__payments">
+        <div class="modal__title2">
+          Инфрмация о платеже
+        </div>
+        <ul class="inputs-list">
+          <li>
+            <label class="radio-btn">
+              <input type="radio" class="radio-btn__input" name="check-term" checked>
+              <span class="radio-btn__checkmark"></span>
+              <span class="radio-btn__text">LiqPay</span>
+            </label>
+          </li>
+          <li>
+            <label class="radio-btn">
+              <input type="radio" class="radio-btn__input" name="check-term">
+              <span class="radio-btn__checkmark"></span>
+              <span class="radio-btn__text">LiqPay</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__note">
+        Есть подарочная карта? <a href="#" class="modal__code">Активируйте ваш код</a>
+      </div>
+      <ul class="modal__terms">
+        <li>
+          <label class="checkbox checkbox_fz_16">
+            <input type="checkbox" class="checkbox__input" name="payment-type">
+            <span class="checkbox__checkmark"></span>
+            <span class="checkbox__text">
+              Я принимаю: Правила и условия использования, Политика возврата, Информация о доставке и оплате
+            </span>
+          </label>
+        </li>
+        <li>
+          <label class="checkbox checkbox_fz_16">
+            <input type="checkbox" class="checkbox__input" name="payment-type">
+            <span class="checkbox__checkmark"></span>
+            <span class="checkbox__text">
+              Извещайте меня о новостях и эксклюзивных предложениях
+            </span>
+          </label>
+        </li>
+      </ul>
+      <div class="modal__btns">
+        <button class="btn btn_w_220 modal__btn js-modal-hide">
+          Оплатить
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/marquee3k.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0KR9x6mLPbnqWjnF-YNcE5nBeo9TmoLc&callback=initMap"
+    async></script>
+</body>
+
+</html>
