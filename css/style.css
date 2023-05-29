@@ -2888,6 +2888,20 @@ body._modal-open .wrapper {
   border-bottom: 1px solid #000000;
 }
 
+.faq-list__item:not(._active) .faq-list__text {
+  max-height: 0 !important;
+}
+
+.faq-list__item._active .faq-list__text {
+  max-height: none;
+  margin-bottom: 35px;
+  opacity: 1;
+}
+
+.faq-list__item._active .faq-list__title::after {
+  transform: rotate(225deg);
+}
+
 .faq-list__title {
   font-weight: 300;
   font-size: 20px;
@@ -2895,6 +2909,35 @@ body._modal-open .wrapper {
   color: #000000;
   padding: 35px 0;
   max-width: 700px;
+  cursor: pointer;
+}
+
+.faq-list__title:hover::after {
+  border-right-color: #4732D4;
+  border-bottom-color: #4732D4;
+}
+
+.faq-list__title::after {
+  content: "";
+  display: inline-flex;
+  vertical-align: super;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #D57350;
+  border-bottom: 2px solid #D57350;
+  transform: rotate(45deg);
+  margin: -3px 0 0 6px;
+  transform-origin: 66% 66%;
+  transition: 0.25s;
+}
+
+.faq-list__text {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  will-change: max-height, margin, opacity;
+  transition: all 0.3s ease-out;
 }
 
 .section-pricelist__inner {
@@ -4063,6 +4106,10 @@ body._modal-open .wrapper {
     max-width: 360px;
   }
 
+  .faq-list__item._active .faq-list__text {
+    margin-bottom: 30px;
+  }
+
   .faq-list__title {
     font-size: 18px;
     padding: 30px 0;
@@ -4543,6 +4590,10 @@ body._modal-open .wrapper {
 
   .section-media-s__inner {
     padding-left: 180px;
+  }
+
+  .faq-list__item._active .faq-list__text {
+    margin-bottom: 25px;
   }
 
   .faq-list__title {
@@ -5929,6 +5980,10 @@ body._modal-open .wrapper {
     max-width: 215px;
   }
 
+  .faq-list__item._active .faq-list__text {
+    margin-bottom: 18px;
+  }
+
   .faq-list__title {
     font-size: 16px;
     padding: 18px 0;
@@ -6530,6 +6585,10 @@ body._modal-open .wrapper {
 
   .section-media-s__list li {
     margin-right: 40px;
+  }
+
+  .faq-list__item._active .faq-list__text {
+    margin-bottom: 12px;
   }
 
   .faq-list__title {
