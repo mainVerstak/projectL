@@ -152,9 +152,9 @@
         </div>
       </div>
       <div class="header__make-appointment">
-        <a href="#" class="btn header-make-appointment">
+        <button type="button" data-modal="modal-appointment" class="btn header-make-appointment">
           Записаться
-        </a>
+        </button>
       </div>
       <div class="menu-btn header__menu-btn">
         <span></span><span></span><span></span>
@@ -591,7 +591,7 @@
 </div>
   </div>
 
-  <a href="#" class="float-btn">
+  <button type="button" data-modal="modal-appointment" class="float-btn">
   <svg class="float-btn__icon" width="31" height="33" viewBox="0 0 31 33" fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
@@ -609,7 +609,7 @@
     запись
     онлайн
   </span>
-</a>
+</button>
   <div class="modal modal-vacancies" id="modal-vacancies">
   <div class="modal__outer js-modal-hide">
     <div class="modal__inner modal-vacancies__inner">
@@ -863,6 +863,53 @@
         <button class="btn btn_w_220 modal__btn js-modal-hide">
           Оплатить
         </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-appointment" id="modal-appointment">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-appointment__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Запись онлайн
+      </div>
+      <div class="modal__text">
+        Оставьте заявку и мы перезвоним вам в ближайшее время
+      </div>
+      <div class="input-row modal__row">
+        <input type="text" class="input-row__input" placeholder="Имя">
+        <div class="input-row__msg input-row__msg_mb">
+          Введите Имя
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <input type="text" class="input-row__input" placeholder="Телефон">
+        <div class="input-row__msg input-row__msg_mb">
+          Введите Телефон
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button type="button" data-modal="modal-accepted" class="btn btn_w_220 modal__btn js-modal-hide">
+          Записаться
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-accepted" id="modal-accepted">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-accepted__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title modal-accepted__title">
+        Заявка принята
+      </div>
+      <div class="modal-accepted__image">
+        <img src="images/check-circle.svg" alt="">
+      </div>
+      <div class="modal__text modal-accepted__text">
+        Мы перезвоним вам в ближайшее время
       </div>
     </div>
   </div>

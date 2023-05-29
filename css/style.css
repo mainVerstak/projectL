@@ -861,6 +861,7 @@ body._modal-open .wrapper {
   padding-top: 19px;
   transform-origin: 50% 60%;
   color: #D57350;
+  cursor: pointer;
 }
 
 .float-btn:hover .float-btn__icon path {
@@ -3855,6 +3856,26 @@ body._modal-open .wrapper {
 
 .modal__certificate-type {
   margin-bottom: 30px;
+}
+
+.modal-accepted__inner {
+  max-width: 450px;
+  text-align: center;
+}
+
+.modal-accepted__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-accepted__image img {
+  max-width: 150px;
+}
+
+.modal-accepted__text {
+  margin: 0;
 }
 
 @media screen and (max-width: 1800px) {
@@ -6859,6 +6880,22 @@ body._modal-open .wrapper {
 
   .modal__terms li {
     margin-bottom: 12px;
+  }
+
+  .modal-accepted__inner {
+    padding-bottom: 40px;
+  }
+
+  .modal-accepted__title {
+    margin-bottom: 25px;
+  }
+
+  .modal-accepted__image {
+    margin-bottom: 25px;
+  }
+
+  .modal-accepted__text {
+    margin: 0;
   }
 }
 
