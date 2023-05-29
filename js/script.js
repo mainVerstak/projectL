@@ -1,5 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  //+faq accordion
+  document.querySelectorAll('.faq-list').forEach(function (accordion) {
+    accordion.querySelectorAll('.faq-list__title').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        let item = btn.closest('.faq-list__item');
+        if (item.classList.contains('_active')) {
+          accordionHide(item)
+        } else {
+          accordion.querySelectorAll('.faq-list__item._active').forEach(function (activeItem) {
+            accordionHide(activeItem)
+          })
+          accordionShow(item)
+        }
+      })
+    });
+  });
+  function accordionShow(item) {
+    let content = item.querySelector('.faq-list__text');
+    content.style.maxHeight = content.scrollHeight + "px";
+    item.classList.add('_active');
+    setTimeout(function () {
+      content.style.maxHeight = "";
+    }, 400);
+  }
+  function accordionHide(item) {
+    let content = item.querySelector('.faq-list__text');
+    content.style.maxHeight = content.offsetHeight + "px";
+    item.classList.remove('_active');
+    setTimeout(function () {
+      content.style.maxHeight = "";
+    }, 400);
+  }
+  //-faq accordion
+
   //+mobile menu
   const menuBtn = document.querySelector('.menu-btn');
   const menu = document.querySelector('.header__menu');
@@ -356,10 +390,14 @@ document.addEventListener("DOMContentLoaded", function () {
       let tabsContent = tabsBtn.nextElementSibling;
       if (tabsContent.classList.contains('js-tabs-content')) {
         let index = elIndex(this);
-        tabsContent.querySelectorAll('.js-tab-content._active').forEach(function (tab) {
-          tab.classList.remove('_active');
-        });
-        tabsContent.querySelectorAll('.js-tab-content')[index].classList.add('_active');
+        let tabContentList = tabsContent.children;
+        for (let i = 0; i < tabContentList.length; i++) {
+          if (i == index) {
+            tabContentList[i].classList.add('_active');
+          } else {
+            tabContentList[i].classList.remove('_active');
+          }
+        }
       }
     })
   })
