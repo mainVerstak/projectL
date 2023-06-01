@@ -485,6 +485,13 @@ body._modal-open .wrapper {
   position: relative;
   transition: 0.35s ease-out;
   cursor: pointer;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.btn-make-appointment:focus {
+  outline: none;
 }
 
 .btn-make-appointment__bg {
@@ -1115,7 +1122,7 @@ body._modal-open .wrapper {
   padding: 5px 0;
   font-family: "Caviar Dreams", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 23px;
   color: #2C2727;
   position: relative;
@@ -1667,7 +1674,7 @@ body._modal-open .wrapper {
 }
 
 .default-layout__brands {
-  margin-top: 64px;
+  margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(4, 136px);
   justify-content: space-between;
@@ -1799,6 +1806,12 @@ body._modal-open .wrapper {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.default-layout__btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .team-detailed-bottom {
@@ -2067,6 +2080,10 @@ body._modal-open .wrapper {
   margin-right: 1em;
   flex-shrink: 0;
   transform: translateY(0.25em);
+}
+
+.family-info__btn {
+  margin-top: 20px;
 }
 
 .section-shop__container {
@@ -3966,6 +3983,7 @@ body._modal-open .wrapper {
   .default-layout__title {
     padding-top: 84px;
     font-size: 90px;
+    margin-bottom: 55px;
     margin-left: -88px;
   }
 
@@ -4202,6 +4220,12 @@ body._modal-open .wrapper {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .default-layout__main-bottom {
+    margin-top: 30px;
   }
 }
 
@@ -4994,7 +5018,7 @@ body._modal-open .wrapper {
   }
 
   .header__nav {
-    margin: 0 0 30px;
+    margin: 0 0 25px;
   }
 
   .header__logo {
@@ -5100,6 +5124,7 @@ body._modal-open .wrapper {
 
   .header-language {
     display: flex;
+    font-size: 14px;
   }
 
   .header-language__btn {
@@ -5551,6 +5576,11 @@ body._modal-open .wrapper {
     width: 45px;
     height: 45px;
     transform: none;
+  }
+
+  .default-layout__btns {
+    justify-content: flex-start;
+    margin-bottom: 30px;
   }
 
   .team-detailed-bottom {
@@ -7056,5 +7086,31 @@ body._modal-open .wrapper {
 
   .article h2 {
     font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1540px) and (min-width: 1360px) {
+  .default-layout__img-title {
+    font-size: 32px;
+  }
+
+  .default-layout__img-title span {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .default-layout__img-title span::after {
+    height: 50px;
+  }
+
+  .default-layout__img {
+    width: 370px;
+  }
+
+  .default-layout__main-title {
+    padding-top: 220px;
+    font-size: 80px;
+    margin-left: -84px;
+    margin-bottom: 0;
   }
 }
